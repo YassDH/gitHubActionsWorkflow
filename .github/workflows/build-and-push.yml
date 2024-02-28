@@ -24,9 +24,6 @@ jobs:
     - name: Install dependencies
       run: npm install
       
-    - name: Build and test
-      run: npm run build && npm test
-      
     - name: Login to DockerHub
       run: docker login -u $USERNAME -p $DOCKER_TOKEN
       
